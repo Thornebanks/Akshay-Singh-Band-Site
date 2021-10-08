@@ -1,1 +1,41 @@
 @use './partials/reset';
+@use './partials/mixins' as *;
+@use './partials/typography' as *;
+
+$mobile: 320px;
+$tablet: 768px;
+$dekstop: 1280px;
+img {
+    max-width: 100%;
+}
+.header {
+    
+    &__nav {
+        background-color: #323232;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__hero {
+        position: relative;
+    }
+    &__hero img {
+        // width: 20rem;
+        // min-height isnt working neither is min-width
+    }
+    &__hero h2 {
+        color: #FFFFFF;
+        position: relative;
+        z-index: 10;
+        bottom: 7rem;
+    }
+}
+
+.musician {
+        
+
+    &__title {
+        font-size: 1.6rem;
+        border: 1px solid;
+    }
+    
+}   

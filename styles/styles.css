@@ -197,4 +197,37 @@ template {
 
 [hidden] {
   display: none;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header__nav {
+  background-color: #323232;
+  color: #FFFFFF;
+  text-align: center;
+}
+.header__hero {
+  position: relative;
+}
+.header__hero h2 {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 10;
+  bottom: 7rem;
+}
+
+.musician__title {
+  font-size: 1.6rem;
+  border: 1px solid;
 }/*# sourceMappingURL=styles.css.map */
