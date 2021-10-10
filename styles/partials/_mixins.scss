@@ -1,4 +1,12 @@
 
-@mixin page-header() {
-
+@mixin tablet {
+    @media screen and {min-width: $tablet;
+        @content;
+    }
 }
+@mixin dekstop {
+    @media screen and {min-width: $dekstop;
+        @content;
+    }
+}
+
