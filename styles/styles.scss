@@ -28,6 +28,9 @@ img {
       padding-left: 136px;
       padding-top: 24px;
     }
+    li {
+        list-style-type: none;
+    }
   }
 
   &__menu {
@@ -114,7 +117,6 @@ img {
     margin: 0 auto;
     @include tablet {
       width: 75%;
-      padding-right: 24px;
     }
   }
   &__heading {
@@ -124,18 +126,21 @@ img {
     font-weight: 600;
     @include tablet {
       font-size: 1.5rem;
-      padding: 36px 72px;
+      padding: 36px 96px;
       line-height: 2rem;
     }
     @include desktop {
       font-weight: 600;
-      padding-left: 144px;
+      padding-left: 160px;
       width: 55%;
     }
 
     &--name {
       display: block;
       padding-left: 0%;
+      @include tablet {
+          width: 100%;
+      }
       @include desktop {
         width: 100%;
       }
@@ -147,20 +152,20 @@ img {
     font-size: 0.875rem;
     @include tablet {
       font-size: 1.5rem;
-      padding-left: 72px;
+      padding-left: 96px;
     }
     @include desktop {
-      padding-left: 144px;
+      padding-left: 160px;
     }
   }
   &__side-by-side {
     @include tablet {
       display: flex;
-      padding: 0px 72px;
+      padding: 0px 96px;
       width: 74%;
     }
     @include desktop {
-      padding-left: 144px;
+      padding-left: 160px;
     }
   }
   &__left {

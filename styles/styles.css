@@ -249,6 +249,9 @@ img {
     padding-top: 24px;
   }
 }
+.header__nav li {
+  list-style-type: none;
+}
 .header__menu {
   display: flex;
   justify-content: space-around;
@@ -350,7 +353,6 @@ img {
 @media screen and (min-width: 768px) {
   .musician__img {
     width: 75%;
-    padding-right: 24px;
   }
 }
 .musician__heading {
@@ -362,20 +364,25 @@ img {
 @media screen and (min-width: 768px) {
   .musician__heading {
     font-size: 1.5rem;
-    padding: 36px 72px;
+    padding: 36px 96px;
     line-height: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .musician__heading {
     font-weight: 600;
-    padding-left: 144px;
+    padding-left: 160px;
     width: 55%;
   }
 }
 .musician__heading--name {
   display: block;
   padding-left: 0%;
+}
+@media screen and (min-width: 768px) {
+  .musician__heading--name {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1280px) {
   .musician__heading--name {
@@ -390,24 +397,24 @@ img {
 @media screen and (min-width: 768px) {
   .musician__sub-heading {
     font-size: 1.5rem;
-    padding-left: 72px;
+    padding-left: 96px;
   }
 }
 @media screen and (min-width: 1280px) {
   .musician__sub-heading {
-    padding-left: 144px;
+    padding-left: 160px;
   }
 }
 @media screen and (min-width: 768px) {
   .musician__side-by-side {
     display: flex;
-    padding: 0px 72px;
+    padding: 0px 96px;
     width: 74%;
   }
 }
 @media screen and (min-width: 1280px) {
   .musician__side-by-side {
-    padding-left: 144px;
+    padding-left: 160px;
   }
 }
 .musician__left {
