@@ -3,7 +3,7 @@
 @use './partials/typography' as *;
 
 $tablet: 768px;
-$dekstop: 1280px;
+$desktop: 1280px;
 $font-family: 'Anenir Next';
 img {
     max-width: 100%;
@@ -19,9 +19,12 @@ img {
         @include tablet {
             display: flex;
             padding-left: 56px;
-            padding-bottom: 36px;
             padding-top: 48px;
             align-items: baseline;
+        }
+        @include desktop {
+            padding-left: 136px;
+            padding-top: 24px;
         }
         
     }
@@ -29,36 +32,49 @@ img {
     &__menu {
         display: flex;
         justify-content: space-around;
+        list-style-type: none;
         @include tablet{
                 padding-left: 56px;
                 font-size: 1.5rem;
                }
-        &--underline {
-            border-bottom: 4px solid white;
-            padding: 16px 0;
-            width: 50%;
+        @include desktop {
+            font-size: 0.875rem;
         }
-        &--h3 {
+        &--underline {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 16px 0;
+            border-bottom: 4px solid #ffffff;
+            @include tablet {
+                padding-bottom: 36px;
+                border-bottom: 2px solid #ffffff;
+            }
+            @include desktop {
+                padding-bottom: 24px;
+            }
+        }
+        &--a {
+            text-decoration: none;
+            color: #E1E1E1;
             padding-top: 16px;
-            width: 50%;
             @include tablet{    
                 font-weight: 400;
             }
         }
 
     }
+    nav li {
+        width: 50%;
+    }
     &__hero {
         background: linear-gradient(rgba(black, 0.5), rgba(black, 0.5)), url(../assets/Images/hero-bio.jpg);
         background-size: cover;
         background-position: center;
         height: 68vw;
-        width: 100%;
         display: flex;
         align-items: center;
         padding-left: 20px;
-        font-weight: 700;
-        
-    }
+        }
     
     &__title {
         color: #FFFFFF;
@@ -69,6 +85,10 @@ img {
             padding-left: 16px;
             padding-top: 64px;
             font-weight: 600;
+        }
+        @include desktop {
+            padding-left: 104px;
+            padding-bottom: 136px;
         }
     }
 }
@@ -84,6 +104,9 @@ img {
         @include tablet {
             font-size: 2.235rem;
             padding: 48px 36px 36px;
+        }
+        @include desktop {
+            padding-left: 124px;
         }
     }
     &__img {
@@ -104,11 +127,19 @@ img {
             padding: 36px 72px;
             line-height: 2rem;
         }
+        @include desktop {
+            font-weight: 600;
+            padding-left: 144px;
+            width: 55%;
+        }
 
 
         &--name {
             display: block;
             padding-left: 0%;
+            @include desktop {
+                width: 100%;
+            }
         }
     }
     &__sub-heading {
@@ -119,12 +150,18 @@ img {
                 font-size: 1.5rem;
                 padding-left: 72px;
             }
+            @include desktop {
+                padding-left: 144px;
+            }
     }
     &__side-by-side {
         @include tablet {
             display: flex;
             padding: 0px 72px;
-            width: 73%;
+            width: 74%;
+        }
+        @include desktop {
+            padding-left: 144px;
         }
     }
     &__left{
@@ -160,6 +197,9 @@ img {
         padding:48px 36px 36px;
         font-size: 2.235rem;
         }
+        @include desktop {
+            padding-left: 124px;
+        }
     }
 
     &__row1,
@@ -169,6 +209,10 @@ img {
             display: flex;
             width: 29.25%;
             padding:0 36px 24px 24px;
+        }
+        @include desktop {
+            padding-left: 124px;
+            width: 26%;
         }
     }
     &__row1 img:nth-child(2), 
@@ -204,15 +248,22 @@ img {
             font-size: 1.5rem;
             font-weight: 600;
         }
+        @include desktop {
+            padding-left: 88px;
+        }
+    }
+    &--social {
+        display: flex;
+        @include desktop {
+            padding-left: 40px;
+        }
     }
     &--social img{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        height: 1.875rem;
+        padding-right: 36px;
+        height: 1.5rem;
         @include tablet {
-            width: 20%;
-            padding-left: 16px;
+            padding-left: 32px;
+            padding-right: 8px;
             }
         }
         &--logo img:last-child{
@@ -221,7 +272,10 @@ img {
                 display: inline;
                 width: 100%;
                 position: relative;
-                left: 156px;
+                left: 134px;
+            }
+            @include desktop {
+                left: 426px;
             }
         }
     }
@@ -234,6 +288,10 @@ img {
             display: flex;
             justify-content: space-between;
             padding-bottom: 48px;
+        }
+        @include desktop {
+            justify-content: space-evenly;
+            padding-right: 264px;
         }
         
       }
@@ -283,6 +341,9 @@ img {
         padding-bottom: 16px;
         @include tablet {
             font-size: 0.875rem;
+        }
+        @include desktop {
+            padding-left: 88px;
         }
         }
     &__copyright img {

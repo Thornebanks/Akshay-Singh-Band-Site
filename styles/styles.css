@@ -239,14 +239,20 @@ img {
   .header__nav {
     display: flex;
     padding-left: 56px;
-    padding-bottom: 36px;
     padding-top: 48px;
     align-items: baseline;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__nav {
+    padding-left: 136px;
+    padding-top: 24px;
   }
 }
 .header__menu {
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
 }
 @media screen and (min-width: 768px) {
   .header__menu {
@@ -254,30 +260,49 @@ img {
     font-size: 1.5rem;
   }
 }
-.header__menu--underline {
-  border-bottom: 4px solid white;
-  padding: 16px 0;
-  width: 50%;
+@media screen and (min-width: 1280px) {
+  .header__menu {
+    font-size: 0.875rem;
+  }
 }
-.header__menu--h3 {
-  padding-top: 16px;
-  width: 50%;
+.header__menu--underline {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 16px 0;
+  border-bottom: 4px solid #ffffff;
 }
 @media screen and (min-width: 768px) {
-  .header__menu--h3 {
+  .header__menu--underline {
+    padding-bottom: 36px;
+    border-bottom: 2px solid #ffffff;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__menu--underline {
+    padding-bottom: 24px;
+  }
+}
+.header__menu--a {
+  text-decoration: none;
+  color: #E1E1E1;
+  padding-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__menu--a {
     font-weight: 400;
   }
+}
+.header nav li {
+  width: 50%;
 }
 .header__hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Images/hero-bio.jpg);
   background-size: cover;
   background-position: center;
   height: 68vw;
-  width: 100%;
   display: flex;
   align-items: center;
   padding-left: 20px;
-  font-weight: 700;
 }
 .header__title {
   color: #FFFFFF;
@@ -290,6 +315,12 @@ img {
     padding-left: 16px;
     padding-top: 64px;
     font-weight: 600;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__title {
+    padding-left: 104px;
+    padding-bottom: 136px;
   }
 }
 
@@ -305,6 +336,11 @@ img {
   .musician__title {
     font-size: 2.235rem;
     padding: 48px 36px 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .musician__title {
+    padding-left: 124px;
   }
 }
 .musician__img {
@@ -330,9 +366,21 @@ img {
     line-height: 2rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .musician__heading {
+    font-weight: 600;
+    padding-left: 144px;
+    width: 55%;
+  }
+}
 .musician__heading--name {
   display: block;
   padding-left: 0%;
+}
+@media screen and (min-width: 1280px) {
+  .musician__heading--name {
+    width: 100%;
+  }
 }
 .musician__sub-heading {
   font-weight: 600;
@@ -345,11 +393,21 @@ img {
     padding-left: 72px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .musician__sub-heading {
+    padding-left: 144px;
+  }
+}
 @media screen and (min-width: 768px) {
   .musician__side-by-side {
     display: flex;
     padding: 0px 72px;
-    width: 73%;
+    width: 74%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .musician__side-by-side {
+    padding-left: 144px;
   }
 }
 .musician__left {
@@ -392,11 +450,22 @@ img {
     font-size: 2.235rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .photo-gallery__title {
+    padding-left: 124px;
+  }
+}
 @media screen and (min-width: 768px) {
   .photo-gallery__row1, .photo-gallery__row2, .photo-gallery__row3 {
     display: flex;
     width: 29.25%;
     padding: 0 36px 24px 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .photo-gallery__row1, .photo-gallery__row2, .photo-gallery__row3 {
+    padding-left: 124px;
+    width: 26%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -434,16 +503,27 @@ img {
     font-weight: 600;
   }
 }
-.footer__contact--social img {
+@media screen and (min-width: 1280px) {
+  .footer__contact--title {
+    padding-left: 88px;
+  }
+}
+.footer__contact--social {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
-  height: 1.875rem;
+}
+@media screen and (min-width: 1280px) {
+  .footer__contact--social {
+    padding-left: 40px;
+  }
+}
+.footer__contact--social img {
+  padding-right: 36px;
+  height: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .footer__contact--social img {
-    width: 20%;
-    padding-left: 16px;
+    padding-left: 32px;
+    padding-right: 8px;
   }
 }
 .footer__contact--logo img:last-child {
@@ -454,7 +534,12 @@ img {
     display: inline;
     width: 100%;
     position: relative;
-    left: 156px;
+    left: 134px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__contact--logo img:last-child {
+    left: 426px;
   }
 }
 .footer__details {
@@ -467,6 +552,12 @@ img {
     display: flex;
     justify-content: space-between;
     padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__details {
+    justify-content: space-evenly;
+    padding-right: 264px;
   }
 }
 .footer__details p {
@@ -519,6 +610,11 @@ img {
 @media screen and (min-width: 768px) {
   .footer__copyright p {
     font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__copyright p {
+    padding-left: 88px;
   }
 }
 .footer__copyright img {
