@@ -235,9 +235,24 @@ img {
   text-align: center;
   padding-top: 24px;
 }
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    padding-left: 56px;
+    padding-bottom: 36px;
+    padding-top: 48px;
+    align-items: baseline;
+  }
+}
 .header__menu {
   display: flex;
   justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    padding-left: 56px;
+    font-size: 1.5rem;
+  }
 }
 .header__menu--underline {
   border-bottom: 4px solid white;
@@ -248,10 +263,16 @@ img {
   padding-top: 16px;
   width: 50%;
 }
+@media screen and (min-width: 768px) {
+  .header__menu--h3 {
+    font-weight: 400;
+  }
+}
 .header__hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Images/hero-bio.jpg);
   background-size: cover;
-  height: 70vw;
+  background-position: center;
+  height: 68vw;
   width: 100%;
   display: flex;
   align-items: center;
@@ -261,6 +282,15 @@ img {
 .header__title {
   color: #FFFFFF;
   font-size: 1.5rem;
+  padding-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .header__title {
+    font-size: 3.75rem;
+    padding-left: 16px;
+    padding-top: 64px;
+    font-weight: 600;
+  }
 }
 
 .musician {
@@ -271,15 +301,34 @@ img {
   font-weight: 700;
   padding: 24px 16px 16px;
 }
+@media screen and (min-width: 768px) {
+  .musician__title {
+    font-size: 2.235rem;
+    padding: 48px 36px 36px;
+  }
+}
 .musician__img {
   width: 90%;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .musician__img {
+    width: 75%;
+    padding-right: 24px;
+  }
 }
 .musician__heading {
   font-size: 0.875rem;
   line-height: 1.375rem;
   padding: 16px 16px;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .musician__heading {
+    font-size: 1.5rem;
+    padding: 36px 72px;
+    line-height: 2rem;
+  }
 }
 .musician__heading--name {
   display: block;
@@ -290,17 +339,70 @@ img {
   padding: 0px 16px 16px;
   font-size: 0.875rem;
 }
-.musician__left, .musician__right {
+@media screen and (min-width: 768px) {
+  .musician__sub-heading {
+    font-size: 1.5rem;
+    padding-left: 72px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .musician__side-by-side {
+    display: flex;
+    padding: 0px 72px;
+    width: 73%;
+  }
+}
+.musician__left {
   padding: 16px 16px;
   line-height: 1.125rem;
   font-size: 0.812rem;
+}
+@media screen and (min-width: 768px) {
+  .musician__left {
+    padding: 0 0 36px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+.musician__right {
+  padding: 16px 16px;
+  line-height: 1.125rem;
+  font-size: 0.812rem;
+}
+@media screen and (min-width: 768px) {
+  .musician__right {
+    padding: 0 0 36px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    padding-left: 24px;
+  }
 }
 
 .photo-gallery {
   background-color: #FAFAFA;
   font-family: "Anenir Next";
+}
+.photo-gallery__title {
   font-size: 1.5rem;
   padding: 16px 16px;
+}
+@media screen and (min-width: 768px) {
+  .photo-gallery__title {
+    padding: 48px 36px 36px;
+    font-size: 2.235rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo-gallery__row1, .photo-gallery__row2, .photo-gallery__row3 {
+    display: flex;
+    width: 29.25%;
+    padding: 0 36px 24px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo-gallery__row1 img:nth-child(2), .photo-gallery__row2 img:nth-child(2), .photo-gallery__row3 img:nth-child(2) {
+    padding: 0 24px;
+  }
 }
 
 .footer {
@@ -309,20 +411,63 @@ img {
   padding: 16px;
   font-family: "Anenir Next";
 }
-.footer__title {
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 48px 36px 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+  }
+}
+.footer__contact--title {
   padding: 16px 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
-.footer__social {
+@media screen and (min-width: 768px) {
+  .footer__contact--title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+.footer__contact--social img {
   display: flex;
   justify-content: space-between;
   width: 50%;
   height: 1.875rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__contact--social img {
+    width: 20%;
+    padding-left: 16px;
+  }
+}
+.footer__contact--logo img:last-child {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__contact--logo img:last-child {
+    display: inline;
+    width: 100%;
+    position: relative;
+    left: 156px;
+  }
+}
 .footer__details {
   padding: 16px 0;
   line-height: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__details {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+  }
 }
 .footer__details p {
   padding: 16px 0;
@@ -333,7 +478,12 @@ img {
 }
 .footer__name {
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.812rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__name {
+    font-size: 0.875rem;
+  }
 }
 .footer__address {
   font-weight: 400;
@@ -346,8 +496,18 @@ img {
 .footer__email {
   font-size: 0.812rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__email {
+    font-size: 0.875rem;
+  }
+}
 .footer__country {
   font-size: 0.812rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__country {
+    font-size: 0.875rem;
+  }
 }
 .footer__country--block {
   display: block;
@@ -356,6 +516,16 @@ img {
   font-size: 0.625rem;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .footer__copyright p {
+    font-size: 0.875rem;
+  }
+}
 .footer__copyright img {
   padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright img {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

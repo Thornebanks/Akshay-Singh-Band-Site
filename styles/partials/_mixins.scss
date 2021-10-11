@@ -1,11 +1,13 @@
+$tablet: 768px;
+$dekstop: 1280px;
 
 @mixin tablet {
-    @media screen and {min-width: $tablet;
+    @media screen and (min-width: $tablet){
         @content;
     }
 }
 @mixin dekstop {
-    @media screen and {min-width: $dekstop;
+    @media screen and (min-width: $dekstop) {
         @content;
     }
 }

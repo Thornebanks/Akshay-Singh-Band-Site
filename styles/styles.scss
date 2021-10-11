@@ -16,12 +16,23 @@ img {
         color: #FFFFFF;
         text-align: center;
         padding-top: 24px;
+        @include tablet {
+            display: flex;
+            padding-left: 56px;
+            padding-bottom: 36px;
+            padding-top: 48px;
+            align-items: baseline;
+        }
+        
     }
 
     &__menu {
         display: flex;
         justify-content: space-around;
-
+        @include tablet{
+                padding-left: 56px;
+                font-size: 1.5rem;
+               }
         &--underline {
             border-bottom: 4px solid white;
             padding: 16px 0;
@@ -30,42 +41,69 @@ img {
         &--h3 {
             padding-top: 16px;
             width: 50%;
+            @include tablet{    
+                font-weight: 400;
+            }
         }
+
     }
     &__hero {
         background: linear-gradient(rgba(black, 0.5), rgba(black, 0.5)), url(../assets/Images/hero-bio.jpg);
         background-size: cover;
-        height: 70vw;
+        background-position: center;
+        height: 68vw;
         width: 100%;
         display: flex;
         align-items: center;
         padding-left: 20px;
         font-weight: 700;
+        
     }
     
     &__title {
         color: #FFFFFF;
         font-size: 1.5rem;
+        padding-top: 24px;
+        @include tablet {
+            font-size: 3.75rem;
+            padding-left: 16px;
+            padding-top: 64px;
+            font-weight: 600;
+        }
     }
 }
 
 .musician {
         font-family: $font-family;
+        
 
     &__title {
         font-size: 1.5rem;
         font-weight: 700;
         padding: 24px 16px 16px;
+        @include tablet {
+            font-size: 2.235rem;
+            padding: 48px 36px 36px;
+        }
     }
     &__img {
         width: 90%;
         margin: 0 auto;
+        @include tablet {
+            width: 75%;
+            padding-right: 24px;
+        }
     }
     &__heading {
         font-size: 0.875rem;
         line-height: 1.375rem;
         padding: 16px 16px;
         font-weight: 600;
+        @include tablet {
+            font-size: 1.5rem;
+            padding: 36px 72px;
+            line-height: 2rem;
+        }
 
 
         &--name {
@@ -77,19 +115,70 @@ img {
             font-weight: 600;
             padding: 0px 16px 16px;
             font-size: 0.875rem;
+            @include tablet {
+                font-size: 1.5rem;
+                padding-left: 72px;
+            }
     }
-    &__left,
+    &__side-by-side {
+        @include tablet {
+            display: flex;
+            padding: 0px 72px;
+            width: 73%;
+        }
+    }
+    &__left{
+        padding: 16px 16px;
+        line-height: 1.125rem;
+        font-size: 0.812rem;
+        @include tablet {
+            padding: 0 0 36px;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+        }
+    }
     &__right {
         padding: 16px 16px;
         line-height: 1.125rem;
         font-size: 0.812rem;
+        @include tablet {
+            padding: 0 0 36px;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            padding-left: 24px;
+        }
     }
 }  
 .photo-gallery {
     background-color: #FAFAFA;
     font-family: $font-family;
-    font-size: 1.5rem;
-    padding: 16px 16px;
+
+    &__title {
+        font-size: 1.5rem;
+        padding: 16px 16px;
+        @include tablet {
+        padding:48px 36px 36px;
+        font-size: 2.235rem;
+        }
+    }
+
+    &__row1,
+    &__row2,
+    &__row3 {
+        @include tablet {
+            display: flex;
+            width: 29.25%;
+            padding:0 36px 24px 24px;
+        }
+    }
+    &__row1 img:nth-child(2), 
+    &__row2 img:nth-child(2), 
+    &__row3 img:nth-child(2) {
+        @include tablet {
+            padding: 0 24px;
+        }
+    }
+    
 }
 
 .footer {
@@ -97,24 +186,58 @@ img {
     color: #ffffff;
     padding: 16px;
     font-family: $font-family;
+    @include tablet {
+        padding: 48px 36px 36px;
+    }
     
-
-    &__title {
+    &__contact {
+        @include tablet {
+            display: flex;
+            align-items: baseline;
+            position: relative;
+        }
+    &--title {
         padding: 16px 0;
         font-size: 1.5rem;
         font-weight: bold;
+        @include tablet {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
     }
-    &__social {
+    &--social img{
         display: flex;
         justify-content: space-between;
         width: 50%;
         height: 1.875rem;
+        @include tablet {
+            width: 20%;
+            padding-left: 16px;
+            }
+        }
+        &--logo img:last-child{
+            display: none;
+            @include tablet {
+                display: inline;
+                width: 100%;
+                position: relative;
+                left: 156px;
+            }
+        }
     }
+    
     &__details {
         padding: 16px 0;
         line-height: 1.125rem;
+        @include tablet {
+            font-size: 0.875rem;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 48px;
+        }
         
       }
+      
       &__details p {
           padding: 16px 0;
       }
@@ -125,8 +248,10 @@ img {
     }
     &__name {
         font-weight: 600;
-        font-size: 0.875rem;
-
+        font-size: 0.812rem;
+            @include tablet {
+                font-size: 0.875rem;
+            }
     }
     &__address {
         font-weight: 400;
@@ -138,9 +263,15 @@ img {
     }
     &__email {
         font-size: 0.812rem;
+        @include tablet {
+            font-size: 0.875rem;
+        }
     }
     &__country {
         font-size: 0.812rem;
+        @include tablet {
+            font-size: 0.875rem;
+        }
 
         &--block {
             display: block;
@@ -150,9 +281,16 @@ img {
     &__copyright p {
         font-size: 0.625rem;
         padding-bottom: 16px;
+        @include tablet {
+            font-size: 0.875rem;
+        }
         }
     &__copyright img {
         padding-bottom: 16px;
+        @include tablet {
+            display: none;
+        }
     }
-    }
+}
+    
 
