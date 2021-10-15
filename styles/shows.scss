@@ -1,0 +1,204 @@
+@use "./partials/reset";
+@use "./partials/mixins" as *;
+@use "./partials/typography" as *;
+
+$tablet: 768px;
+$desktop: 1280px;
+$font-family: "Anenir Next";
+$site-black: #323232;
+$white: #ffffff;
+img {
+  max-width: 100%;
+}
+.header {
+    font-family: $font-family;
+  
+    &__nav {
+      background-color: $site-black;
+      color: $white;
+      text-align: center;
+      padding-top: 24px;
+      @include tablet {
+        display: flex;
+        padding-left: 56px;
+        padding-top: 48px;
+        align-items: baseline;
+      }
+      @include desktop {
+        padding-left: 136px;
+        padding-top: 24px;
+      }
+      li {
+          list-style-type: none;
+      }
+    }
+  
+    &__menu {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      @include tablet {
+        padding-left: 56px;
+        font-size: 1.5rem;
+      }
+      @include desktop {
+        font-size: 0.875rem;
+      }
+      &--underline {
+        text-decoration: none;
+        color: $white;
+        padding: 16px 0;
+        border-bottom: 4px solid $white;
+        @include tablet {
+          padding-bottom: 36px;
+          border-bottom: 2px solid $white;
+        }
+        @include desktop {
+          padding-bottom: 24px;
+        }
+      }
+      &--a {
+        text-decoration: none;
+        color: #e1e1e1;
+        padding-top: 16px;
+        @include tablet {
+          font-weight: 400;
+        }
+      }
+    }
+    nav li {
+      width: 50%;
+    }
+}
+
+
+
+
+
+
+    .footer {
+        background-color: $site-black;
+        color: $white;
+        padding: 16px;
+        font-family: $font-family;
+        @include tablet {
+          padding: 48px 36px 36px;
+        }
+      
+        &__contact {
+          @include tablet {
+            display: flex;
+            align-items: baseline;
+            position: relative;
+          }
+          &--title {
+            padding: 16px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            @include tablet {
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+            @include desktop {
+              padding-left: 88px;
+            }
+          }
+          &--social {
+            display: flex;
+            @include desktop {
+              padding-left: 40px;
+            }
+          }
+          &--social img {
+            padding-right: 36px;
+            height: 1.5rem;
+            @include tablet {
+              padding-left: 32px;
+              padding-right: 8px;
+            }
+          }
+          &--logo img:last-child {
+            display: none;
+            @include tablet {
+              display: inline;
+              width: 100%;
+              position: relative;
+              left: 134px;
+            }
+            @include desktop {
+              left: 426px;
+            }
+          }
+        }
+      
+        &__details {
+          padding: 16px 0;
+          line-height: 1.125rem;
+          @include tablet {
+            font-size: 0.875rem;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 48px;
+          }
+          @include desktop {
+            justify-content: space-evenly;
+            padding-right: 264px;
+          }
+        }
+      
+        &__details p {
+          padding: 16px 0;
+        }
+        &__name span {
+          display: block;
+          padding-top: 0;
+        }
+        &__name {
+          font-weight: 600;
+          font-size: 0.812rem;
+          @include tablet {
+            font-size: 0.875rem;
+          }
+        }
+        &__address {
+          font-weight: 400;
+          font-size: 0.812rem;
+        }
+        &__address span {
+          display: block;
+          font-weight: 400;
+        }
+        &__email {
+          font-size: 0.812rem;
+          @include tablet {
+            font-size: 0.875rem;
+          }
+        }
+        &__country {
+          font-size: 0.812rem;
+          @include tablet {
+            font-size: 0.875rem;
+          }
+      
+          &--block {
+            display: block;
+          }
+        }
+      
+        &__copyright p {
+          font-size: 0.625rem;
+          padding-bottom: 16px;
+          @include tablet {
+            font-size: 0.875rem;
+          }
+          @include desktop {
+            padding-left: 88px;
+          }
+        }
+        &__copyright img {
+          padding-bottom: 16px;
+          @include tablet {
+            display: none;
+          }
+        }
+      }
