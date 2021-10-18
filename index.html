@@ -94,33 +94,34 @@
         <div class="comments__title">
           <h2>Join the Conversation</h2>
         </div>
-        <div class="comments__img">
-          <img src="./assets/Images/Mohan-muruge.jpg" alt="" />
-        </div>
-
-        <div>
-          <form class="comments__form">
-            <div>
-              <label class=""
-                >Name
-                <input
-                  class=""
-                  type="text"
-                  name="name"
-                  placeholder="john Doe"
-                />
-              </label>
-            </div>
-            <div>
-              <label class=""
-                >Comment
-                <textarea
-                  name="comment"
-                  placeholder="Add a new comment"
-                ></textarea>
-              </label>
-            </div>
-            <button class="comments__submit">comment</button>
+        
+          <div class="comments__img">
+            <img class="comments__img comments__img--hero" src="./assets/Images/Mohan-muruge.jpg" alt="" />
+          </div>
+          <div>
+            <form class="comments__form">
+              <div class="comments__top">
+                <label class="comments__form comments__form--name"
+                  >Name</label>
+                  <input
+                    class="comments__form comments__form--top"
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+          
+              </div>
+              <div class="comments__bottom">
+                <label class="comments__form comments__form--comment"
+                  >Comment</label>
+                  <textarea class="comments__form comments__form--textarea"
+                    name="comment" rows="5" cols="30"
+                    placeholder="Add a new comment"
+                  ></textarea>
+          
+              </div>
+       
+            <div class="comments__btn"><button class="comments__submit">comment</button></div>
           </form>
           <ul class="comments-ul"></ul>
         </div>

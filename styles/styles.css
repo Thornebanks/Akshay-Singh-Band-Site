@@ -631,4 +631,176 @@ img {
   .footer__copyright img {
     display: none;
   }
+}
+
+.comments {
+  font-family: "Anenir Next";
+  padding: 24px 16px 16px;
+}
+@media screen and (min-width: 768px) {
+  .comments__title {
+    padding: 48px 8px 36px;
+    font-size: 2.235rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__title {
+    padding-left: 108px;
+  }
+}
+.comments__img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.comments__img--hero {
+  border-radius: 50%;
+  height: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .comments__img--hero {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.comments__submit {
+  color: #ffffff;
+  background-color: #323232;
+  width: 14.4rem;
+  border-radius: 10px;
+  padding: 14px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .comments__submit {
+    width: 13rem;
+  }
+}
+.comments__btn {
+  padding-left: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .comments__btn {
+    text-align: right;
+    padding-right: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__btn {
+    padding-right: 104px;
+    margin-left: 40%;
+  }
+}
+.comments__img {
+  border-radius: 50%;
+  background-color: #E1E1E1;
+}
+.comments__reviewer {
+  font-weight: normal;
+  padding-right: 32px;
+}
+@media screen and (min-width: 768px) {
+  .comments__reviewer {
+    padding-left: 16px;
+  }
+}
+.comments__date {
+  font-weight: normal;
+  color: #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .comments__date {
+    padding-left: 43%;
+  }
+}
+.comments__review {
+  padding-left: 56px;
+  font-size: 0.8125rem;
+  list-style: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .comments__review {
+    width: 75%;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+.comments__top {
+  padding-left: 30px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .comments__top {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__top {
+    padding-left: 40%;
+  }
+}
+.comments__bottom {
+  padding-left: 30px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .comments__bottom {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__bottom {
+    padding-left: 40%;
+  }
+}
+.comments__form {
+  border-radius: 4px;
+  resize: none;
+  width: 90%;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .comments__form {
+    padding: 15px;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__form {
+    width: 75%;
+  }
+}
+.comments__form--name {
+  display: block;
+  color: #E1E1E1;
+  text-transform: uppercase;
+}
+.comments__form--comment {
+  display: block;
+  color: #E1E1E1;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.comments-ul {
+  font-family: "Anenir Next";
+  padding: 16px 0;
+}
+.comments-ul__reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .comments-ul__reviews {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments-ul__reviews {
+    margin-left: 40%;
+  }
 }/*# sourceMappingURL=styles.css.map */

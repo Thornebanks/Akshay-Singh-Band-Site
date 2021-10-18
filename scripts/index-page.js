@@ -36,7 +36,7 @@ commentsForm.addEventListener('submit', (event) => {
         };
     }
     commentsUnorder.innerHTML = '';
-
+    commentsForm.reset();
     comments.unshift(createComment());
     displayComment(comments);
 });
@@ -65,7 +65,7 @@ function displayComment() {
 
         const commentReview = document.createElement('p');
         commentReview.innerText = comments[i].comment;
-        commentReview.classList.add('review__description');
+        commentReview.classList.add('comments__review');
         commentSection.appendChild(commentReview);
         
         commentsForm.appendChild(commentsUnorder);

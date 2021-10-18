@@ -29,7 +29,7 @@ img {
       padding-top: 24px;
     }
     li {
-        list-style-type: none;
+      list-style-type: none;
     }
   }
 
@@ -139,7 +139,7 @@ img {
       display: block;
       padding-left: 0%;
       @include tablet {
-          width: 100%;
+        width: 100%;
       }
       @include desktop {
         width: 100%;
@@ -353,4 +353,156 @@ img {
       display: none;
     }
   }
+}
+
+.comments {
+  font-family: $font-family;
+  padding: 24px 16px 16px;
+
+  &__title{
+
+    @include tablet{
+      padding: 48px 8px 36px;
+      font-size: 2.235rem;
+    }
+    @include desktop{
+      padding-left: 108px;
+    }
+    
+  }
+
+  &__img {
+    width: 2.25rem;
+    height: 2.25rem;
+    
+
+    &--hero {
+      border-radius: 50%;
+      height: 2.25rem;
+      @include tablet {
+        height: 3rem;
+        width: 3rem;
+    }
+    }
+  }
+  &__submit {
+    color: $white;
+    background-color: $site-black;
+    width: 14.4rem;
+    border-radius: 10px;
+    padding: 14px;
+    text-transform: uppercase;
+    @include tablet {
+      width: 13rem;
+    }
+  }
+  &__btn {
+    padding-left: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E1E1E1;
+    @include tablet{
+      text-align: right;
+      padding-right: 28px;
+    }
+    @include desktop {
+      padding-right: 104px;
+      margin-left: 40%;
+    }
+  }
+  &__img {
+    border-radius: 50%;
+    background-color: #E1E1E1;
+    
+  }
+  &__reviewer {
+    font-weight: normal;
+    padding-right: 32px;
+    @include tablet {
+      padding-left: 16px;
+    }
+  }
+  &__date {
+    font-weight: normal;
+    color: #E1E1E1;
+    @include tablet {
+      padding-left: 43%;
+    }
+  }
+  &__review {
+    padding-left: 56px;
+    font-size: 0.8125rem;
+    list-style: 1.125rem;
+    @include tablet {
+      width: 75%;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+  }
+  &__top {
+    padding-left: 30px;
+    padding-bottom: 16px;
+    @include tablet {
+      padding-left: 40px;
+    }
+    @include desktop {
+      padding-left: 40%;
+    }
+  }
+  &__bottom {
+    padding-left: 30px;
+    padding-bottom: 16px;
+    @include tablet {
+      padding-left: 40px;
+    }
+    @include desktop {
+      padding-left: 40%;
+    }
+  }
+  &__form {
+      border-radius: 4px;
+      resize: none;
+      width: 90%;
+      padding: 10px;
+      @include tablet {
+        padding: 15px;
+        width: 90%;
+      }
+      @include desktop{
+        width: 75%;
+      }
+    &--name{
+      display: block;
+      color: #E1E1E1;
+      text-transform: uppercase;
+    }
+    &--comment {
+      display: block;
+      color: #E1E1E1;
+      text-transform: uppercase;
+      border-radius: 4px;
+      
+    }
+   
+  }
+
+}
+
+.comments-ul{
+    font-family: $font-family;
+    padding: 16px 0;
+
+    &__reviews {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-bottom: 1px solid #E1E1E1;
+      padding: 16px 0;
+      @include tablet {
+        justify-content: flex-start;
+      }
+      @include desktop {
+        margin-left: 40%;
+      }
+    }
+    
 }
