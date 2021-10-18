@@ -277,7 +277,7 @@ img {
 @media screen and (min-width: 768px) {
   .header__menu--a {
     padding-bottom: 36px;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -297,6 +297,189 @@ img {
 }
 .header nav li {
   width: 50%;
+  padding-right: 40px;
+}
+
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/Images/hero-shows.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Anenir Next";
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    height: 65vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__section {
+    padding-bottom: 146px;
+    padding-left: 60px;
+  }
+}
+.main__heading {
+  font-size: 0.875rem;
+  font-weight: normal;
+  padding-top: 40px;
+  padding-left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .main__heading {
+    font-size: 1.55rem;
+    padding-left: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__heading {
+    padding-left: 80px;
+  }
+}
+.main__title {
+  font-size: 1.5rem;
+  width: 65%;
+  line-height: 2rem;
+  padding-left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .main__title {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    padding-left: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__title {
+    padding-left: 80px;
+    width: 42%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__flex {
+    display: flex;
+  }
+}
+.main__frame {
+  padding: 8px;
+}
+@media screen and (min-width: 1280px) {
+  .main__frame {
+    width: 50%;
+    padding-left: 72px;
+  }
+}
+.main__frame--resize {
+  height: 7.375rem;
+  width: 95%;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .main__frame--resize {
+    width: 65%;
+    height: auto;
+  }
+}
+
+.event {
+  font-family: "Anenir Next";
+}
+.event__title {
+  font-size: 1.5rem;
+  padding: 36px 16px;
+}
+@media screen and (min-width: 768px) {
+  .event__title {
+    font-size: 2.235rem;
+    padding: 48px 36px 36px;
+  }
+}
+
+.shows {
+  font-family: "Anenir Next";
+  list-style-type: none;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows {
+    width: 80%;
+    margin-left: 128px;
+  }
+}
+.shows__dates {
+  color: #e1e1e1;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  padding-left: 16px;
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .shows__dates {
+    display: none;
+  }
+}
+.shows__paragraph {
+  font-size: 0.8125rem;
+  padding: 16px;
+}
+.shows__venue {
+  font-size: 0.8125rem;
+  padding-left: 16px;
+  padding-top: 10px;
+  font-weight: normal;
+  color: #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .shows__venue {
+    display: none;
+  }
+}
+.shows__para {
+  font-size: 0.8125rem;
+  padding: 16px;
+}
+.shows__location {
+  font-size: 0.8125rem;
+  padding-left: 16px;
+  padding-top: 10px;
+  font-weight: normal;
+  color: #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .shows__location {
+    display: none;
+  }
+}
+.shows__local {
+  font-size: 0.8125rem;
+  padding: 16px;
+}
+.shows__btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #323232;
+  border-radius: 4px;
+  padding: 12px;
+  width: 16.4rem;
+  display: block;
+  text-align: center;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .shows__btn {
+    width: 8rem;
+    padding: 15px;
+  }
 }
 
 .footer {

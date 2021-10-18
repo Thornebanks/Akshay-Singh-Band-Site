@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/shows.css" />
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Akshay-Singh-Bandsite2</title>
   </head>
   <body>
@@ -20,11 +21,11 @@
         <nav>
           <ul class="header__menu">
             <li>
-              <a href="#" class="header__menu header__menu--underline"
+              <a href="../index.html" class="header__menu header__menu--underline"
                 >Biography</a
               >
             </li>
-            <li><a href="#" class="header__menu header__menu--a">Shows</a></li>
+            <li><a href="./shows.html" class="header__menu header__menu--a">Shows</a></li>
           </ul>
         </nav>
       </div>
@@ -33,21 +34,23 @@
     <main class="main">
       <section class="main__section">
         <h2 class="main__heading">Beautiful Beasts Album</h2>
-        <h1 class="main__title">Queen of Yello x For The Strings</h1>
-        <div class="main__frame">
-          <iframe
-            width="100%"
-            height="166"
-            scrolling="no"
-            frameborder="no"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340577569&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          ></iframe>
+        <div class="main__flex">
+          <h1 class="main__title">Queen of Yello x For The Strings</h1>
+          <div class="main__frame">
+            <iframe class="main__frame main__frame--resize"
+              width="100%"
+              height="166"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340577569&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
-      <section>
-      <h2>Shows</h2>
+      <section class="event">
+      <h2 class="event__title">Shows</h2>
       <ul class="shows"></ul>
     </section>
 

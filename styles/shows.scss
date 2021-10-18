@@ -11,195 +11,346 @@ img {
   max-width: 100%;
 }
 .header {
-    font-family: $font-family;
-  
-    &__nav {
-      background-color: $site-black;
-      color: $white;
-      text-align: center;
+  font-family: $font-family;
+
+  &__nav {
+    background-color: $site-black;
+    color: $white;
+    text-align: center;
+    padding-top: 24px;
+    @include tablet {
+      display: flex;
+      padding-left: 56px;
+      padding-top: 48px;
+      align-items: baseline;
+    }
+    @include desktop {
+      padding-left: 136px;
       padding-top: 24px;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    @include tablet {
+      padding-left: 56px;
+      font-size: 1.5rem;
+    }
+    @include desktop {
+      font-size: 0.875rem;
+    }
+    &--a {
+      text-decoration: none;
+      color: $white;
+      padding: 16px 0;
+      border-bottom: 4px solid $white;
       @include tablet {
-        display: flex;
-        padding-left: 56px;
-        padding-top: 48px;
-        align-items: baseline;
+        padding-bottom: 36px;
+        border-bottom: 4px solid $white;
       }
       @include desktop {
-        padding-left: 136px;
-        padding-top: 24px;
-      }
-      li {
-          list-style-type: none;
+        padding-bottom: 24px;
       }
     }
-  
-    &__menu {
-      display: flex;
-      justify-content: space-around;
-      list-style-type: none;
+
+    &--underline {
+      text-decoration: none;
+      color: #e1e1e1;
+      padding-top: 16px;
       @include tablet {
-        padding-left: 56px;
-        font-size: 1.5rem;
+      font-weight: 400;
       }
-      @include desktop {
-        font-size: 0.875rem;
-      }
-      &--a {
-        text-decoration: none;
-        color: $white;
-        padding: 16px 0;
-        border-bottom: 4px solid $white;
-        @include tablet {
-          padding-bottom: 36px;
-          border-bottom: 2px solid $white;
-        }
-        @include desktop {
-          padding-bottom: 24px;
-        }
+    }
+  }
+  nav li {
+    width: 50%;
+    padding-right: 40px;
+  }
+}
+
+.main {
+  background: linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
+    url(../assets/Images/hero-shows.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-family: $font-family;
+  @include desktop {
+    height: 65vw;
+  }
+  &__section{
+    @include desktop {
+      padding-bottom: 146px;
+      padding-left: 60px;
+    }
+  }
+  &__heading {
+    font-size: 0.875rem;
+    font-weight: normal;
+    padding-top: 40px;
+    padding-left: 16px;
+    @include tablet {
+      font-size: 1.55rem;
+      padding-left: 36px;
+    }
+    @include desktop {
+      padding-left: 80px;
+    }
+  }
+  &__title {
+    font-size: 1.5rem;
+    width: 65%;
+    line-height: 2rem;
+    padding-left: 16px;
+    @include tablet {
+      font-size: 3.75rem;
+      line-height: 4.25rem;
+      padding-left: 36px;
+    }
+    @include desktop {
+      padding-left: 80px;
+      width: 42%;
+    }
+  }
+  &__flex {
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__frame {
+    padding: 8px;
+    @include desktop {
+      width: 50%;
+      padding-left: 72px;
+    }
+    &--resize {
+      height: 7.375rem;
+      width: 95%;
+      height: auto;
+      @include tablet {
+        width: 65%;
+        height: auto;
       }
       
-      &--underline{
-        text-decoration: none;
-        color: #e1e1e1;
-        padding-top: 16px;
-        @include tablet {
-        font-weight: 400;
-        }
-      }
     }
-    nav li {
-      width: 50%;
+  }
+}
+.event {
+  font-family: $font-family;
+  &__title {
+    font-size: 1.5rem;
+    padding: 36px 16px;
+    @include tablet {
+      font-size: 2.235rem;
+      padding: 48px 36px 36px;
     }
+  }
+}
+.shows {
+  font-family: $font-family;
+  list-style-type: none;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 16px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: space-between;
+  }
+  @include desktop {
+    width: 80%;
+    margin-left: 128px;
+  }
+  &__dates {
+    color: #e1e1e1;
+    font-size: 0.8125rem;
+    font-weight: normal;
+    padding-left: 16px;
+    padding-top: 10px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__paragraph {
+    font-size: 0.8125rem;
+    padding: 16px;
+  }
+  &__venue {
+    font-size: 0.8125rem;
+    padding-left: 16px;
+    padding-top: 10px;
+    font-weight: normal;
+    color: #e1e1e1;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__para {
+    font-size: 0.8125rem;
+    padding: 16px;
+  }
+  &__location {
+    font-size: 0.8125rem;
+    padding-left: 16px;
+    padding-top: 10px;
+    font-weight: normal;
+    color: #e1e1e1;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__local {
+    font-size: 0.8125rem;
+    padding: 16px;
+  }
+  &__btn {
+    text-decoration: none;
+    color: $white;
+    background-color: $site-black;
+    border-radius: 4px;
+    padding: 12px;
+    width: 16.4rem;
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+    @include tablet {
+      width: 8rem;
+      padding: 15px;
+    }
+  }
 }
 
 
+.footer {
+  background-color: $site-black;
+  color: $white;
+  padding: 16px;
+  font-family: $font-family;
+  @include tablet {
+    padding: 48px 36px 36px;
+  }
 
-
-
-
-    .footer {
-        background-color: $site-black;
-        color: $white;
-        padding: 16px;
-        font-family: $font-family;
-        @include tablet {
-          padding: 48px 36px 36px;
-        }
-      
-        &__contact {
-          @include tablet {
-            display: flex;
-            align-items: baseline;
-            position: relative;
-          }
-          &--title {
-            padding: 16px 0;
-            font-size: 1.5rem;
-            font-weight: bold;
-            @include tablet {
-              font-size: 1.5rem;
-              font-weight: 600;
-            }
-            @include desktop {
-              padding-left: 88px;
-            }
-          }
-          &--social {
-            display: flex;
-            @include desktop {
-              padding-left: 40px;
-            }
-          }
-          &--social img {
-            padding-right: 36px;
-            height: 1.5rem;
-            @include tablet {
-              padding-left: 32px;
-              padding-right: 8px;
-            }
-          }
-          &--logo img:last-child {
-            display: none;
-            @include tablet {
-              display: inline;
-              width: 100%;
-              position: relative;
-              left: 134px;
-            }
-            @include desktop {
-              left: 426px;
-            }
-          }
-        }
-      
-        &__details {
-          padding: 16px 0;
-          line-height: 1.125rem;
-          @include tablet {
-            font-size: 0.875rem;
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 48px;
-          }
-          @include desktop {
-            justify-content: space-evenly;
-            padding-right: 264px;
-          }
-        }
-      
-        &__details p {
-          padding: 16px 0;
-        }
-        &__name span {
-          display: block;
-          padding-top: 0;
-        }
-        &__name {
-          font-weight: 600;
-          font-size: 0.812rem;
-          @include tablet {
-            font-size: 0.875rem;
-          }
-        }
-        &__address {
-          font-weight: 400;
-          font-size: 0.812rem;
-        }
-        &__address span {
-          display: block;
-          font-weight: 400;
-        }
-        &__email {
-          font-size: 0.812rem;
-          @include tablet {
-            font-size: 0.875rem;
-          }
-        }
-        &__country {
-          font-size: 0.812rem;
-          @include tablet {
-            font-size: 0.875rem;
-          }
-      
-          &--block {
-            display: block;
-          }
-        }
-      
-        &__copyright p {
-          font-size: 0.625rem;
-          padding-bottom: 16px;
-          @include tablet {
-            font-size: 0.875rem;
-          }
-          @include desktop {
-            padding-left: 88px;
-          }
-        }
-        &__copyright img {
-          padding-bottom: 16px;
-          @include tablet {
-            display: none;
-          }
-        }
+  &__contact {
+    @include tablet {
+      display: flex;
+      align-items: baseline;
+      position: relative;
+    }
+    &--title {
+      padding: 16px 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      @include tablet {
+        font-size: 1.5rem;
+        font-weight: 600;
       }
+      @include desktop {
+        padding-left: 88px;
+      }
+    }
+    &--social {
+      display: flex;
+      @include desktop {
+        padding-left: 40px;
+      }
+    }
+    &--social img {
+      padding-right: 36px;
+      height: 1.5rem;
+      @include tablet {
+        padding-left: 32px;
+        padding-right: 8px;
+      }
+    }
+    &--logo img:last-child {
+      display: none;
+      @include tablet {
+        display: inline;
+        width: 100%;
+        position: relative;
+        left: 134px;
+      }
+      @include desktop {
+        left: 426px;
+      }
+    }
+  }
+
+  &__details {
+    padding: 16px 0;
+    line-height: 1.125rem;
+    @include tablet {
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 48px;
+    }
+    @include desktop {
+      justify-content: space-evenly;
+      padding-right: 264px;
+    }
+  }
+
+  &__details p {
+    padding: 16px 0;
+  }
+  &__name span {
+    display: block;
+    padding-top: 0;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 0.812rem;
+    @include tablet {
+      font-size: 0.875rem;
+    }
+  }
+  &__address {
+    font-weight: 400;
+    font-size: 0.812rem;
+  }
+  &__address span {
+    display: block;
+    font-weight: 400;
+  }
+  &__email {
+    font-size: 0.812rem;
+    @include tablet {
+      font-size: 0.875rem;
+    }
+  }
+  &__country {
+    font-size: 0.812rem;
+    @include tablet {
+      font-size: 0.875rem;
+    }
+
+    &--block {
+      display: block;
+    }
+  }
+
+  &__copyright p {
+    font-size: 0.625rem;
+    padding-bottom: 16px;
+    @include tablet {
+      font-size: 0.875rem;
+    }
+    @include desktop {
+      padding-left: 88px;
+    }
+  }
+  &__copyright img {
+    padding-bottom: 16px;
+    @include tablet {
+      display: none;
+    }
+  }
+}
