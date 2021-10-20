@@ -163,6 +163,7 @@ img {
     flex-wrap: wrap;
     padding: 16px;
     justify-content: space-between;
+    width: 90%;
   }
   @include desktop {
     width: 80%;

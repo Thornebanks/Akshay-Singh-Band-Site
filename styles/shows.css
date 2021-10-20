@@ -408,6 +408,7 @@ img {
     flex-wrap: wrap;
     padding: 16px;
     justify-content: space-between;
+    width: 90%;
   }
 }
 @media screen and (min-width: 1280px) {

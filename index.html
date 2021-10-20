@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/shows.css">
+   
 
     <title>Akshay-Singh-BandSite1</title>
   </head>
@@ -22,11 +22,17 @@
         <nav>
           <ul class="header__menu">
             <li>
-              <a href="./index.html" class="header__menu header__menu--underline"
+              <a
+                href="./index.html"
+                class="header__menu header__menu--underline"
                 >Biography</a
               >
             </li>
-            <li><a href="./pages/shows.html" class="header__menu header__menu--a">Shows</a></li>
+            <li>
+              <a href="./pages/shows.html" class="header__menu header__menu--a"
+                >Shows</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -95,34 +101,42 @@
         <div class="comments__title">
           <h2>Join the Conversation</h2>
         </div>
+
         
+        <div class="comments__div">
           <div class="comments__img">
-            <img class="comments__img comments__img--hero" src="./assets/Images/Mohan-muruge.jpg" alt="" />
+            <img
+              class="comments__img comments__img--hero"
+              src="./assets/Images/Mohan-muruge.jpg"
+              alt=""
+            />
           </div>
-          <div>
-            <form class="comments__form">
-              <div class="comments__top">
-                <label class="comments__form comments__form--name"
-                  >Name</label>
-                  <input
-                    class="comments__form comments__form--top"
-                    type="text"
-                    name="name"
-                    placeholder="Enter your name"
-                  />
-          
-              </div>
-              <div class="comments__bottom">
-                <label class="comments__form comments__form--comment"
-                  >Comment</label>
-                  <textarea class="comments__form comments__form--textarea"
-                    name="comment" rows="5" cols="30"
-                    placeholder="Add a new comment"
-                  ></textarea>
-          
-              </div>
-       
-            <div class="comments__btn"><button class="comments__submit">comment</button></div>
+          <form class="comments__form">
+            <div class="comments__top">
+              <label class="comments__form comments__form--name">Name</label>
+              <input
+                class="comments__form comments__form--top"
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="comments__bottom">
+              <label class="comments__form comments__form--comment"
+                >Comment</label
+              >
+              <textarea
+                class="comments__form comments__form--textarea"
+                name="comment"
+                rows="5"
+                cols="30"
+                placeholder="Add a new comment"
+              ></textarea>
+            </div>
+
+            <div class="comments__btn">
+              <button class="comments__submit">comment</button>
+            </div>
           </form>
           <ul class="comments-ul"></ul>
         </div>
