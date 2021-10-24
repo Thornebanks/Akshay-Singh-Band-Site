@@ -7,6 +7,9 @@ $desktop: 1280px;
 $font-family: "Anenir Next";
 $site-black: #323232;
 $white: #ffffff;
+$silver: #afafaf;
+$mercury: #e1e1e1;
+$alabaster: #fafafa;
 img {
   max-width: 100%;
 }
@@ -60,10 +63,10 @@ img {
 
     &--underline {
       text-decoration: none;
-      color: #e1e1e1;
+      color: $mercury;
       padding-top: 16px;
       @include tablet {
-      font-weight: 400;
+        font-weight: 400;
       }
     }
   }
@@ -85,7 +88,7 @@ img {
   @include desktop {
     height: 65vw;
   }
-  &__section{
+  &__section {
     @include desktop {
       padding-bottom: 146px;
       padding-left: 60px;
@@ -138,7 +141,6 @@ img {
         width: 65%;
         height: auto;
       }
-      
     }
   }
 }
@@ -152,12 +154,46 @@ img {
       padding: 48px 36px 36px;
     }
   }
+  &__row {
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__hidden {
+    display: none;
+    @include tablet {
+      display: initial;
+      text-transform: uppercase;
+      color: $silver;
+      font-size: 0.875rem;
+      &:first-of-type {
+        padding-left: 48px;
+      }
+      &:nth-last-child(2) {
+        padding-left: 88px;
+      }
+      &:nth-last-child(1) {
+        padding-left: 100px;
+      }
+    }
+    @include desktop {
+      display: initial;
+    }
+  }
+  &__div {
+    padding-left: 18px;
+    width: 50%;
+    justify-content: space-evenly;
+    display: flex;
+    padding-top: 68px;
+  }
 }
 .shows {
   font-family: $font-family;
   list-style-type: none;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 16px;
+
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -170,7 +206,7 @@ img {
     margin-left: 128px;
   }
   &__dates {
-    color: #e1e1e1;
+    color: $mercury;
     font-size: 0.8125rem;
     font-weight: normal;
     padding-left: 16px;
@@ -188,7 +224,7 @@ img {
     padding-left: 16px;
     padding-top: 10px;
     font-weight: normal;
-    color: #e1e1e1;
+    color: $mercury;
     @include tablet {
       display: none;
     }
@@ -202,7 +238,7 @@ img {
     padding-left: 16px;
     padding-top: 10px;
     font-weight: normal;
-    color: #e1e1e1;
+    color: $mercury;
     @include tablet {
       display: none;
     }
@@ -221,13 +257,18 @@ img {
     display: block;
     text-align: center;
     margin-left: 10px;
+    &:hover {
+      background: darken($alabaster, 15%);
+    }
+    &:active {
+      background: darken($mercury, 100%);
+    }
     @include tablet {
       width: 8rem;
       padding: 15px;
     }
   }
 }
-
 
 .footer {
   background-color: $site-black;

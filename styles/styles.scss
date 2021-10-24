@@ -7,6 +7,9 @@ $desktop: 1280px;
 $font-family: "Anenir Next";
 $site-black: #323232;
 $white: #ffffff;
+$silver: #afafaf;
+$mercury: #e1e1e1;
+$alabaster: #fafafa;
 img {
   max-width: 100%;
 }
@@ -59,7 +62,7 @@ img {
     }
     &--a {
       text-decoration: none;
-      color: #e1e1e1;
+      color: $mercury;
       padding-top: 16px;
       @include tablet {
         font-weight: 400;
@@ -191,7 +194,7 @@ img {
   }
 }
 .photo-gallery {
-  background-color: #fafafa;
+  background-color: $alabaster;
   font-family: $font-family;
 
   &__title {
@@ -359,23 +362,23 @@ img {
   font-family: $font-family;
   padding: 24px 16px 16px;
 
-  &__title{
-
-    @include tablet{
+  &__title {
+    @include tablet {
       padding: 48px 8px 36px;
       font-size: 2.235rem;
     }
-    @include desktop{
+    @include desktop {
       padding-left: 108px;
     }
-    
   }
-  
+  &__div {
+    display: flex;
+    padding-top: 16px;
+  }
 
   &__img {
     width: 2.25rem;
     height: 2.25rem;
-    
 
     &--hero {
       border-radius: 50%;
@@ -383,13 +386,13 @@ img {
       @include tablet {
         height: 3rem;
         width: 3rem;
-    }
+      }
     }
   }
   &__submit {
     color: $white;
     background-color: $site-black;
-    width: 14.4rem;
+    width: 13rem;
     border-radius: 10px;
     padding: 14px;
     text-transform: uppercase;
@@ -400,8 +403,8 @@ img {
   &__btn {
     padding-left: 28px;
     padding-bottom: 16px;
-    border-bottom: 1px solid #E1E1E1;
-    @include tablet{
+    border-bottom: 1px solid $mercury;
+    @include tablet {
       text-align: right;
       padding-right: 28px;
     }
@@ -412,8 +415,7 @@ img {
   }
   &__img {
     border-radius: 50%;
-    background-color: #E1E1E1;
-    
+    background-color: $mercury;
   }
   &__reviewer {
     font-weight: normal;
@@ -424,7 +426,7 @@ img {
   }
   &__date {
     font-weight: normal;
-    color: #E1E1E1;
+    color: #e1e1e1;
     @include tablet {
       padding-left: 43%;
     }
@@ -460,50 +462,45 @@ img {
     }
   }
   &__form {
-      border-radius: 4px;
-      resize: none;
+    border-radius: 4px;
+    resize: none;
+    width: 90%;
+    @include tablet {
+      padding: 15px;
       width: 90%;
-      padding: 10px;
-      @include tablet {
-        padding: 15px;
-        width: 90%;
-      }
-      @include desktop{
-        width: 75%;
-      }
-    &--name{
+    }
+    @include desktop {
+      width: 75%;
+    }
+    &--name {
       display: block;
-      color: #E1E1E1;
+      color: $mercury;
       text-transform: uppercase;
     }
     &--comment {
       display: block;
-      color: #E1E1E1;
+      color: $mercury;
       text-transform: uppercase;
       border-radius: 4px;
-      
     }
-   
   }
-
 }
 
-.comments-ul{
-    font-family: $font-family;
-    padding: 16px 0;
+.comments-ul {
+  font-family: $font-family;
+  padding: 16px 0;
 
-    &__reviews {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      border-bottom: 1px solid #E1E1E1;
-      padding: 16px 0;
-      @include tablet {
-        justify-content: flex-start;
-      }
-      @include desktop {
-        margin-left: 40%;
-      }
+  &__reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid $mercury;
+    padding: 16px 0;
+    @include tablet {
+      justify-content: flex-start;
     }
-    
+    @include desktop {
+      margin-left: 40%;
+    }
+  }
 }

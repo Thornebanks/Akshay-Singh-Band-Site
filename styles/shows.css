@@ -395,6 +395,43 @@ img {
     padding: 48px 36px 36px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .event__row {
+    display: flex;
+  }
+}
+.event__hidden {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .event__hidden {
+    display: initial;
+    text-transform: uppercase;
+    color: #afafaf;
+    font-size: 0.875rem;
+  }
+  .event__hidden:first-of-type {
+    padding-left: 48px;
+  }
+  .event__hidden:nth-last-child(2) {
+    padding-left: 88px;
+  }
+  .event__hidden:nth-last-child(1) {
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .event__hidden {
+    display: initial;
+  }
+}
+.event__div {
+  padding-left: 18px;
+  width: 50%;
+  justify-content: space-evenly;
+  display: flex;
+  padding-top: 68px;
+}
 
 .shows {
   font-family: "Anenir Next";
@@ -475,6 +512,12 @@ img {
   display: block;
   text-align: center;
   margin-left: 10px;
+}
+.shows__btn:hover {
+  background: #d4d4d4;
+}
+.shows__btn:active {
+  background: black;
 }
 @media screen and (min-width: 768px) {
   .shows__btn {
